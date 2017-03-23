@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> 
+    <title></title> 
+    <link rel="manifest" href="manifest.json"> 
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet"> 
+    <script src="lib/ionic/js/ionic.bundle.js"></script> 
+    <script src="cordova.js"></script> 
+    <script src="js/app.js"></script> 
+	<script src="js/server.js"></script> 
+  </head> 
+  <body ng-app="starter" >  
+  <ion-side-menus> 
+      <ion-side-menu-content> 
+        <ion-nav-bar class="bar-positive"> 
+          <ion-nav-buttons side="left"> 
+            <button menu-toggle="left" class="button button-icon button-clear ion-navicon"></button>             
+          </ion-nav-buttons> 
+          <ion-nav-buttons side="right"> 
+          <a href="#/adduser" class="button button-balanced">Add User</a> 
+          </ion-nav-buttons> 
+          <ion-nav-back-button></ion-nav-back-button> 
+        </ion-nav-bar> 
+         
+        <ion-nav-view></ion-nav-view> 
+      </ion-side-menu-content> 
+      <ion-side-menu side="left"> 
+        <ion-header-bar class="bar-positive"> 
+          <h1 class="title">Menu</h1> 
+        </ion-header-bar> 
+        <ion-content> 
+          <ion-list> 
+            <ion-item menu-close href="#/list">User Listing</ion-item> 
+            <!--<ion-item menu-close href="#/add">Add New User</ion-item>--> 
+          </ion-list> 
+        </ion-content> 
+      </ion-side-menu>       
+    </ion-side-menus>   
+  <!--<ion-header-bar class="bar-stable bar-positive">    
+   <a href="#/add" class="button button-balanced">Add User</a>           
+   <h1 class="title">Ionic Blank Starter</h1> 
+   <button class="button icon ion-home"></button> 
+   </ion-header-bar> 
+   <ion-content class="padding has-subheader">          
+   <ion-nav-view></ion-nav-view> 
+   <div class="list" ng-repeat="user in contactlist"> 
+   <div class="item "> 
+    <h2>{{user.name}}</h2> 
+    <h4>{{user.email}}</h4> 
+    <p>{{user.number}}</p> 
+    <div class="item-remove-animate item-input-inset"> 
+    <button class="button button-calm" ng-click="update(user._id)">Update</button>&nbsp;&nbsp;&nbsp;&nbsp; 
+    <button class="button button-assertive" ng-click="remove(user._id)">Delete</button> 
+    </div> 
+    </div> 
+   </div> 
+   </ion-content> 
+</div>     --> 
+  </body> 
+</html> 

@@ -1,0 +1,18 @@
+<ion-view view-title="User" ng-controller="EditCtrl">  
+	<ion-content>  
+		<div class="list card">
+			<div class="item item-input"> 
+				<input type="text" ng-model="contact.name" focus-me/>  
+					</div>  
+					<div class="item item-input">  
+						<input type="text" ng-model="contact.email"/> 
+						</div> 
+						<div class="item item-input">   
+							<input type="text" ng-model="contact.number"/>   
+							</div>     
+							<div class="padding">  
+							<button class="button button-block button-positive" ng-click="update(contact._id)">Save</button> 
+							</div>  
+						</div> 
+					</ion-content>
+				</ion-view>

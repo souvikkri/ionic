@@ -1,0 +1,14 @@
+<ion-view view-title="User Listing" ng-controller="AppCtrl">  
+ <ion-content>  
+ <ion-list show-reorder="reordering">   
+ <ion-item class="item-remove-animate item item-icon-right" ng-repeat="user in contactlist">   
+ <h2 style="font-size: 20px;padding-bottom: 2px;color: green;">{{user.name}}</h2>   
+ <h4 style="font-size: 15px;padding-bottom: 2px;color: #211CB6;">{{user.email}}</h4>    
+ <p style="font-size: 13px;padding-bottom: 2px;color: #E6A014;">{{user.number}}</p>   
+        <a href="" ng-click="delete(user._id)" class="button button-light icon ion-trash-a"></a>  
+		<a href="#/edit/{{user._id}}" class="button button-icon ion-edit"></a>     
+		</ion-item>   
+	</ion-list> 
+    <br><br><br>  
+	</ion-content> 
+</ion-view> 
